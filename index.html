@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stock Market Analysis</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <h1>Stock Market Analysis</h1>
+
+    <!-- Chart Section -->
+    <div id="chart-section">
+      <canvas id="stockChart"></canvas>
+      <div id="range-buttons">
+        <button id="1mo">1 Month</button>
+        <button id="3mo">3 Month</button>
+        <button id="1y">1 Year</button>
+        <button id="5y">5 Years</button>
+        <button id="low-high">Low High Data</button>
+      </div>
+    </div>
+
+    <!-- List Section -->
+    <div id="list-section">
+      <ul id="stock-list">
+        <!-- Stocks will be dynamically populated here -->
+      </ul>
+    </div>
+
+    <!-- Detail Section -->
+    <div id="detail-section">
+      
+      <div id="stock-details">
+        <p id="stock-name">AAPL</p>
+        <p id="stock-profit">0.24%</p>
+        <p id="stock-book-value">$3.953</p>
+      </div>
+
+      <p id="stock-summary">
+        Apple Inc. designs, manufactures, and markets smartphones, personal
+        computers, tablets, wearables, and accessories worldwide...
+      </p>
+    </div>
+
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
